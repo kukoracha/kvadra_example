@@ -1,0 +1,21 @@
+{% extends 'message/base.html' %}
+
+{% block title %}Добавление записи{% endblock %}
+
+{% block content %}
+
+<div class="main">
+    <div class="sidebar">
+        <div class="collection">
+            {% for msg in msgs %}
+            <a data-id="{{msg.id}}" class="collection-item">{{msg.date}}</a>
+            {% endfor %}
+        </div>
+        <a target="_blank" href="{% url 'addtext' %}" class="waves-effect light-blue lighten-1 waves-light btn"><i
+                class="material-icons left">add</i>Добавить запись</a>
+    </div>
+    <div class="view">
+        Выберите сообщение, которое хотите прочитать
+    </div>
+</div>
+{% endblock %}

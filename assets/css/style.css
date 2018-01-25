@@ -1,0 +1,44 @@
+.wrapper, .sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+.main, .sidebar{
+    display: flex;
+
+}
+
+.wrapper, .content, .main, .main > div {
+    height: 100%;
+    overflow: hidden;
+}
+
+.view, .collection {
+    overflow-y: auto;
+}
+
+.view {
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.collection-item{
+    cursor: pointer;
+    color: #38b6f6 !important;
+}
+
+.collection-item.active{
+    background-color: #38b6f6 !important;
+    color: #fff !important;
+}
+
+.view, .content{
+    flex: 1 auto;
+}
+
+#uploadtext{
+    float: none;
+    margin: 2rem auto;
+}

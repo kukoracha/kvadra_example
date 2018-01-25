@@ -1,0 +1,24 @@
+{% extends 'message/base.html' %}
+
+{% block title %}Добавление записи{% endblock %}
+
+{% block content %}
+<div class="row">
+    <form id="uploadtext" class="col center s12 m10 l8">
+        {% csrf_token %}
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="txt" class="materialize-textarea"></textarea>
+                <label for="txt" data-error="Заполните поле">Введите сообщение</label>
+            </div>
+            <div class="s12">
+                <button class="btn right light-blue lighten-1 waves-effect waves-light" type="submit">Отправить
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
