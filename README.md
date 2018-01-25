@@ -2,6 +2,12 @@
 
 ## Инструкция по развертыванию dev версии
 
+Это пример на языке AppleScript:
+
+    tell application "Foo"
+        beep
+    end tell
+
 1. Скопируйте репозиторий на компьютер 
     git clone https://github.com/kukoracha/kvadra_example.git
 2. Создайте виртуальное окружение 
